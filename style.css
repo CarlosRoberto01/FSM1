@@ -1,0 +1,240 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8bff91;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Imagem do cabeçalho */
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #2e7d32;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
+    font-size: 1.2em;
+}
+
+nav a {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+}
+
+/* Formulário de pesquisa */
+form.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+form input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #81c784;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #66bb6a;
+}
+
+
+/* Main */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* Artigos */
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+article p {
+    line-height: 1.8;
+    color: #555;
+}
+
+article a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+/* Vídeo */
+section#videos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+section#videos iframe {
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section#especialistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+section#especialistas img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+section#especialistas a {
+    color: #2e7d32;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section#especialistas a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #2e7d32, #388e3c);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form.barra-pesquisa {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    article {
+        margin-bottom: 20px;
+    }
+
+    section#videos iframe {
+        max-width: 100%;
+    }
+
+    section#especialistas img {
+        width: 120px;
+        height: 120px;
+    }
+}

@@ -15,9 +15,9 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #8bff91;
+    background-color: #2e7d32;
     color: #fff;
-    padding: 20px;
+    /* padding: 5px; */
     text-align: center;
 }
 
@@ -42,8 +42,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    background-color: #2e7d32;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 nav ul {
@@ -116,8 +115,9 @@ h1 {
 article {
     background-color: #fff;
     padding: 20px;
+    margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s;
 }
 

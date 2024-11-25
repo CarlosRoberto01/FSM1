@@ -10,22 +10,18 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
     background-color: #2e7d32;
-    color: #fff;
-    /* padding: 5px; */
-    text-align: center;
+
 }
 
 header img {
-    max-width: 150px;
+    max-width: 80px;
     height: auto;
     margin-bottom: 10px;
-    border-radius: 5px;
 }
 
 /* Imagem do cabeçalho */
@@ -59,6 +55,7 @@ nav a {
     padding: 8px 12px;
     border-radius: 4px;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -70,22 +67,23 @@ form.barra-pesquisa {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    gap: 10px;
+    margin: 16px;
+    padding: 16px;
 }
 
 form input[type="text"] {
     padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
     width: 250px;
 }
 
 form input[type="submit"] {
-    padding: 8px 20px;
-    background-color: #81c784;
+    padding: 8px;
+    margin-left: 16px;
+    background-color: #002ab4;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -109,6 +107,7 @@ h1 {
     color: #2e7d32;
     text-align: center;
 }
+
 h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -263,6 +262,7 @@ footer a {
     .barra-pesquisa {
         width: 10px;
     }
+
     article {
         margin: 20px;
         padding: 20px;
@@ -289,6 +289,4 @@ footer a {
     }
 }
 
-@media screen and (min-widht: 1280px) {
-
-}   
+@media screen and (min-widht: 1280px) {}

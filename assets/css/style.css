@@ -109,6 +109,14 @@ h1 {
     color: #2e7d32;
     text-align: center;
 }
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+
 
 /* Artigos */
 article {
@@ -184,6 +192,40 @@ section#especialistas a:hover {
     text-decoration: underline;
 }
 
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 /* Footer */
 footer {
@@ -202,19 +244,28 @@ footer a {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+    header {
+        width: auto;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    form.barra-pesquisa {
-        flex-direction: column;
-        gap: 5px;
+    .barra-pesquisa {
+        width: 10px;
     }
-
     article {
-        margin-bottom: 20px;
+        margin: 20px;
+        padding: 20px;
     }
 
     section#videos iframe {
@@ -226,3 +277,18 @@ footer a {
         height: 120px;
     }
 }
+
+@media screen and (min-widht: 769px) and (max-width: 1279px) {
+    header {
+        width: 100%;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-widht: 1280px) {
+
+}   

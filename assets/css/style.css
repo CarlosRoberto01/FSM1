@@ -81,7 +81,7 @@ form input[type="text"] {
 form input[type="submit"] {
     padding: 8px;
     margin-left: 16px;
-    background-color: #002ab4;
+    /* background-color: #002ab4; */
     border: none;
     border-radius: 8px;
     color: white;
@@ -110,6 +110,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    margin-top: 40px;
     margin-bottom: 20px;
     color: #000000;
     text-align: center;
@@ -192,12 +193,9 @@ section#especialistas a:hover {
 }
 
 form {
-    max-width: 500px;
+    width: 500px;
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 form label {
@@ -218,13 +216,12 @@ form textarea {
 }
 
 form input[type="submit"] {
+    width: 80%;
     background-color: #388e3c;
     color: white;
     border: none;
     cursor: pointer;
 }
-
-
 
 /* Footer */
 footer {
@@ -256,20 +253,21 @@ footer a {
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .barra-pesquisa {
-        width: 10px;
+        width: 35%;
+        flex-direction: column;
+        align-items: center;
     }
 
     article {
-        margin: 20px;
         padding: 20px;
+        margin: 20px;
     }
 
     section#videos iframe {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     section#especialistas img {
@@ -279,14 +277,23 @@ footer a {
 }
 
 @media screen and (min-widht: 769px) and (max-width: 1279px) {
-    header {
-        width: 100%;
-    }
 
     h2 {
-        display: flex;
-        justify-content: center;
+        font-size: 1.5em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #000000;
+        text-align: center;
+    }
+
+
+    .barra-pesquisa {
+        width: 35%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        width: 100%;
     }
 }
-
-@media screen and (min-widht: 1280px) {}
